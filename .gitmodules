@@ -1,0 +1,3 @@
+[submodule "BBD_CONNECT"]
+	path = BBD_CONNECT
+	url = https://github.com/LeonardoDaFonsecaEsteves/BDD_CONNECT.git

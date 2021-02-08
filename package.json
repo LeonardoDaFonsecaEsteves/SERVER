@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "maj:BDD_CONNECT": "cd BDD_CONNECT && git pull && npm i",
+    "maj:SERVER_API": "cd SERVER_API && git pull && npm i",
+    "maj": "concurrently \"npm run maj:BDD_CONNECT\" \"npm run maj:SERVER_API\"",
+    "start:BBD_CONNECT": "cd BDD_CONNECT && npm run start",
+    "start:SERVER_API": "cd SERVER_API && npm run start",
+    "start": "concurrently \"npm run start:BBD_CONNECT\" \"npm run start:SERVER_API\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
